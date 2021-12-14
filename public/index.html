@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Meta vice"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Meta Vice</title>
+    <style type="text/css">
+      @import url("https://p.typekit.net/p.css?s=1&k=pcz8imd&ht=tk&f=1223.1224.1225.1226.1227.1228.1229.1230.1231.1232.1233.1234&a=6980960&app=typekit&e=css");
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/201527/00000000000000007735e478/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),
+       url("https://use.typekit.net/af/201527/00000000000000007735e478/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),
+       url("https://use.typekit.net/af/201527/00000000000000007735e478/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+       font-display:swap;
+       font-style:normal;
+       font-weight:500
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/305df3/00000000000000007735e474/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"),
+       url("https://use.typekit.net/af/305df3/00000000000000007735e474/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff"),
+       url("https://use.typekit.net/af/305df3/00000000000000007735e474/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("opentype");
+       font-display:swap;
+       font-style:italic;
+       font-weight:500
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/6b0973/00000000000000007735e471/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"),
+       url("https://use.typekit.net/af/6b0973/00000000000000007735e471/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"),
+       url("https://use.typekit.net/af/6b0973/00000000000000007735e471/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");
+       font-display:swap;
+       font-style:normal;
+       font-weight:100
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/b5d2f7/00000000000000007735e475/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("woff2"),
+       url("https://use.typekit.net/af/b5d2f7/00000000000000007735e475/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("woff"),
+       url("https://use.typekit.net/af/b5d2f7/00000000000000007735e475/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3") format("opentype");
+       font-display:swap;
+       font-style:italic;
+       font-weight:100
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/610b53/00000000000000007735e477/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),
+       url("https://use.typekit.net/af/610b53/00000000000000007735e477/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),
+       url("https://use.typekit.net/af/610b53/00000000000000007735e477/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+       font-display:swap;
+       font-style:normal;
+       font-weight:200
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/492bcd/00000000000000007735e47a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff2"),
+       url("https://use.typekit.net/af/492bcd/00000000000000007735e47a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff"),
+       url("https://use.typekit.net/af/492bcd/00000000000000007735e47a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("opentype");
+       font-display:swap;
+       font-style:italic;
+       font-weight:200
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/a29125/00000000000000007735e472/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),
+       url("https://use.typekit.net/af/a29125/00000000000000007735e472/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),
+       url("https://use.typekit.net/af/a29125/00000000000000007735e472/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+       font-display:swap;
+       font-style:normal;
+       font-weight:300
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/589581/00000000000000007735e476/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"),
+       url("https://use.typekit.net/af/589581/00000000000000007735e476/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"),
+       url("https://use.typekit.net/af/589581/00000000000000007735e476/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
+       font-display:swap;
+       font-style:italic;
+       font-weight:300
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/a29651/00000000000000007735e473/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+       url("https://use.typekit.net/af/a29651/00000000000000007735e473/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),
+       url("https://use.typekit.net/af/a29651/00000000000000007735e473/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+       font-display:swap;
+       font-style:normal;
+       font-weight:400
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/360024/00000000000000007735e47b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),
+       url("https://use.typekit.net/af/360024/00000000000000007735e47b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),
+       url("https://use.typekit.net/af/360024/00000000000000007735e47b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+       font-display:swap;
+       font-style:italic;
+       font-weight:400
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/863317/00000000000000007735e479/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),
+       url("https://use.typekit.net/af/863317/00000000000000007735e479/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),
+       url("https://use.typekit.net/af/863317/00000000000000007735e479/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+       font-display:swap;
+       font-style:normal;
+       font-weight:700
+      }
+      @font-face {
+       font-family:"ddt";
+       src:url("https://use.typekit.net/af/16b37c/00000000000000007735e47c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),
+       url("https://use.typekit.net/af/16b37c/00000000000000007735e47c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),
+       url("https://use.typekit.net/af/16b37c/00000000000000007735e47c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+       font-display:swap;
+       font-style:italic;
+       font-weight:700
+      }
+      .tk-ddt {
+       font-family:"ddt",sans-serif
+      }
+    </style>
+    <style type="text/css">
+      .knockout {
+        vertical-align: middle;
+        background-image: linear-gradient(111deg, rgba(254,254,254,1) 2%, rgba(126,155,249,1) 12%, rgba(254,254,254,1) 22%, rgba(254,254,255,1) 31%, rgba(126,155,249,1) 43%, rgba(254,254,254,1) 54%, rgba(254,254,254,1) 67%, rgba(126,155,249,1) 79%, rgba(254,254,254,1) 89%, rgba(254,254,254,1) 98%);
+        background-size: 250%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+
+      .knockout{
+        animation: gradient 3s cubic-bezier(0, 0, 0.57, 0.58) infinite;
+        -webkit-animation: gradient 3s cubic-bezier(0.63, 0.61, 1, 1) infinite;
+        -moz-animation: gradient 3s ease infinite;
+      }
+
+      @-webkit-keyframes gradient {
+          0% {
+              background-position-x: -70%
+          }
+
+          100% {
+              background-position-x: 30%
+          }
+          
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

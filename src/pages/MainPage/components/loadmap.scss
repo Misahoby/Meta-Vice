@@ -1,0 +1,19 @@
+
+.stage {
+    // background: linear-gradient(180deg, rgba(211, 86, 255, 0.3) 0%, rgba(211, 86, 255, 0) 100%); 
+    // border-end-end-radius: 20px;
+    // border-top-right-radius: 20px;
+    // border-start-start-radius: 20px;
+    // box-shadow: 8px 8px 12px 5px #0a040c;
+    // margin-top: 5px !important;
+
+    p{
+        line-height: 20px;
+    }
+
+    * {
+        margin-bottom: 10px !important;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+}

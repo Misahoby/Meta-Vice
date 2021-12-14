@@ -1,0 +1,350 @@
+$--border-opacity: 0.1;
+$--bg-opacity: 0.1;
+
+body {
+  margin: 0;
+  font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji,
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+// width
+.w {
+    &-1_5{
+        width: 0.375rem;
+    }
+}
+
+// height
+.h{
+    &-full{
+        height: 100%;
+    }
+    &-1_5{
+        height: 0.375rem;
+    }
+}
+
+// border
+.border{
+    &-solid{
+        border: solid;
+    }
+
+    &-t{
+        border-top-width: 1px;
+    }
+    &-wilder-purple {
+      border-color: rgba(171,86,225, 1);
+    }
+    &-wilder-blue{
+        border-color: rgba(98,179,255, var(--border-opacity))
+    }
+
+    &-hightlight{
+        border-color: rgba(229,231,235, 0.2);
+    }
+    &-2{
+        border-width: 2px;
+    }
+    &-opacity-25 {
+        --border-opacity: 0.25;
+    }
+    &-opacity-50 {
+        --border-opacity: 0.5;
+    }
+    &-opacity-90{
+        --border-opacity: 0.9;
+    }
+    &-right{
+        border-right: 1px solid;
+    }
+    &-left{
+        border-left: 1px solid;
+    }
+    &-top{
+        border-top: 1px solid;
+    }
+    &-grey-100{
+        border-color: grey;
+    }
+}
+
+// background
+.bg{
+    &-opacity{
+        &-20{
+            --bg-opacity: 0.2;
+        }
+    }
+    &-white {
+        --tw-bg-opacity: 1;
+        background-color: rgba(255,255,255, 1);
+    }
+    &-clip-text{
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    &-blur-1{
+        background-color: rgba(61,110,204,0.15);
+    } 
+    &-blur-2{
+        background-color: rgba(61,110,204,0.2);
+    }
+    &-wilder-blue-dark{
+        background-color: rgba(61,110,204,var(--bg-opacity))
+    }
+    &-pink{
+        background-color: rgba(211, 86, 255, 0.3);
+    }
+}
+
+
+// Spacing
+@for $i from 0 through 100 {
+    .-ml-#{$i} {
+        margin-left: -#{$i}px;
+    }
+    .-mr-#{$i} {
+        margin-right: -#{$i}px;
+    }
+    .-mx-#{$i} {
+        margin-left: -#{$i}px;
+        margin-right: -#{$i}px;
+    }
+    .-mt-#{$i} {
+        margin-top: -#{$i}px;
+    }
+    .-mb-#{$i} {
+        margin-bottom: -#{$i}px;
+    }
+    .-my-#{$i} {
+        margin-top: -#{$i}px;
+        margin-bottom: -#{$i}px;
+    }
+    .-m-#{$i} {
+        margin: -#{$i}px;
+    }
+
+    // spacing classes
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+    .mx-#{$i} {
+        margin-left: #{$i}px;
+        margin-right: #{$i}px;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+    .my-#{$i} {
+        margin-top: #{$i}px;
+        margin-bottom: #{$i}px;
+    }
+    .m-#{$i} {
+        margin: #{$i}px;
+    }
+    .ml-#{$i}rem {
+        margin-left: #{$i}px;
+    }
+    .mr-#{$i}rem {
+        margin-right: #{$i}rem;
+    }
+    .mx-#{$i}rem {
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
+    }
+    .mt-#{$i}rem {
+        margin-top: #{$i}rem;
+    }
+    .mb-#{$i}rem {
+        margin-bottom: #{$i}rem;
+    }
+    .my-#{$i}rem {
+        margin-top: #{$i}rem;
+        margin-bottom: #{$i}rem;
+    }
+    .m-#{$i}rem {
+        margin: #{$i}rem;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}px;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}px;
+    }
+    .px-#{$i} {
+        padding-left: #{$i}px;
+        padding-right: #{$i}px;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+    .py-#{$i} {
+        padding-top: #{$i}px;
+        padding-bottom: #{$i}px;
+    }
+    .p-#{$i} {
+        padding: #{$i}px !important;
+    }
+    .opacity-#{$i} {
+        opacity: #{$i * 0.01} !important;
+    }
+    .border-rounded-#{$i}{
+        border-radius: #{$i}px !important;
+    }
+}
+// Custom padding
+.p-0_5{
+    padding: .125rem;
+}
+
+// Flex
+.flex-auto {
+    flex: auto;
+}
+
+@for $i from 1 through 12 {
+    .flex-#{$i} {
+        flex: #{$i};
+    }
+}
+
+@for $i from 1 through 100 {
+    // Typography
+    .font-size-#{$i}vw {
+        font-size: #{$i}vw;
+    }
+
+    .font-size-#{$i}vh {
+        font-size: #{$i}vh;
+    }
+    // width
+    .w-#{$i}{
+        width: #{$i}px !important;
+    }
+     // height
+    .h-#{$i}{
+        height: #{$i}px !important;
+    }
+}
+
+// Layout
+@for $i from 0 through 1000 {
+    .z-index-#{$i} {
+        z-index: #{$i};
+    }
+}
+
+// Sizing
+@for $i from 1 through 100 {
+    .w-#{$i}rem {
+        width: #{$i}rem;
+    }
+
+    .h-#{$i}rem {
+        height: #{$i}rem;
+    }
+    .h-#{$i}vh {
+      height: #{$i}vh;
+    }
+    .fixed-center-m#{$i} {
+        position: fixed;
+        left: calc(50vw - #{$i}rem);
+        top: calc(50vh - #{$i}rem);
+    }
+}
+
+// rotate
+@for $i from 1 through 180 {
+    .rotate-#{$i} {
+        transform: rotate(#{$i}deg);
+    }
+}
+
+// overflow
+.overflow-hidden{
+  overflow: hidden;
+}
+.overflow-x-scroll {
+    overflow-x: auto;
+}
+.scrollbar-display-none{
+    &::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+// object-fit
+.object-fit{
+    &-cover {
+        object-fit: cover;
+    }
+    &-contain {
+        object-fit: contain;
+    }
+}
+
+
+// text-align 
+.text{
+    &-align{
+        &-center {
+            text-align: center;
+            text-align: -webkit-center;
+        }
+    }
+    
+    &-transparent {
+        color: transparent;
+    }
+    &-sm{
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }    
+
+    &-decoration{
+        &-none {
+            text-decoration: none;
+        }    
+    }
+    &-glow-blue{
+        text-shadow: 0 0 6px #006fff,0 0 20px #1877f2;
+    }
+    &-wilder-blue{
+        --text-opacity: 1;
+        text-shadow: rgba(98,179,255,var(--text-opacity));
+    }
+}
+
+.hover{
+    &-zoom-1_1:hover{
+        transform: scale(1.1);
+    }
+}
+
+.cursor{
+    &-pointer{
+        cursor: pointer;
+    }   
+}
+
+.filter-blue-3{
+    filter: blur(3px);
+}
+.st151{fill:#B7BDEE;}

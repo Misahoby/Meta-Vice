@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+	.MainPage-middle-section {
+		flex-direction: column;
+
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.social-wrapper{
+		margin-top: 5px;
+	}
+	.ProductIntro{
+		padding: 10px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.MainPage-middle-section {
+		margin-bottom: 50px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.ProductIntro{
+		padding: 20px;
+	}
+}
+
+.overlay {
+	background: rgb(0, 0, 0);
+	background: #0000000a; /* Black see-through */
+}
+// video {
+// 	object-fit: cover;
+// 	width: 100vw;
+// 	height: 100vh;
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// }
+
+.spinner {
+	left: calc(50% - 18px);
+	top: calc(50% - 18px);
+}
+
+.page-body{
+	width: 100% ;
+	margin-top: 106px ;
+	margin-bottom: 106px ;
+	height: calc(90vh - 96px) ;
+}

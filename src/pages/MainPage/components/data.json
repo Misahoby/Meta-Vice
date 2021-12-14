@@ -1,0 +1,37 @@
+
+{
+    "faqs" : [
+        {
+            "q": "Where can I buy $meta-vice from?",
+            "a": "$meta-vice currently exists as an ERC-20 token and trades on the UNISWAP DEX. For Slippage check the Official community and website."
+        },
+        {
+            "q": "What is the Meta Vice?",
+            "a": "Meta Vice is a multifaceted Decentralised VR Immersive metaverse for adults. From Adult Content Creation, Night Clubs, Strip Clubs, Private parties, A Grand Casino and much more. Meta Vice aims to build the worlds biggest immersive adult metaverse."
+        },
+        {
+            "q": "What game engine is Meta Vice going to be built on?",
+            "a": "Unreal Engine 5"
+        },
+        {
+            "q": "What is the utility/use-case of the $meta-vice token?",
+            "a": "The $meta-vice token is the backbone of the entire Meta Vice economy. As the primary in-game currency $meta-vice will be used for a variety of purposes such as in-game transactions, purchases, the Meta Vice marketplace, staking with DAO implementations to be intoduced from MV 0.3 (Refer to Roadmap)."
+        },
+        {
+            "q": "Do you plan to expand to different networks?",
+            "a": "We plan on expanding to BSC, Solana, and Polygon (More ecosystem expansions to be announced)."
+        },
+        {
+            "q": "How does NFT's work in the Meta Vice?",
+            "a": "NFT's play a crucial role in the Meta Vice economy. All ownable assets, accessories, Condos and many other aspects of Meta Vice will exist as NFT's. You will own them, they will be unique and you can trade them on the Meta Vice Marketplace. NFT staking will be introduced at a later stage."
+        },
+        {
+            "q": "What exchanges are we listed on and what are the plans for future listings?",
+            "a": "Currently we are listed on UNISWAP and plan to list on numerous decentralised exchanges as well as the top Centralised Exchanges which will be disclosed as we are near to listing on these exchanges."
+        },
+        {
+            "q": "What makes Meta Vice different and better from other Metaverse projects? ",
+            "a": "Unique and extremely immersive experiences is at the core of Meta Vice. We also opted to use the latest Unreal Engine version which is in early access prototyping phase to create the most amazing real time graphics. Another amazing aspect of Meta Vice is the multitude of different experiences we will create within our virtual reality for everyone to have something to do that they enjoy."
+        }
+    ]
+}
